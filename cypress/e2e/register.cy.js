@@ -13,7 +13,7 @@ describe('Register', () => {
     })
     it('Should register bussines',()=>{
         // nombre
-        cy.get('#name').click().type(name)
+        cy.get('#name').type(name)
         cy.get('#name').should('have.value', name)
         // logo
         cy.get('#logo').click().type(logo)
