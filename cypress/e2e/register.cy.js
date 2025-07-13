@@ -1,5 +1,5 @@
 const url = 'http://localhost:5173/register'
-const name = "troyan";
+const name = "troyano";
 const logo = "https://example.com/"
 const location = "https://example.com/"
 const face = "https://example.com/"
