@@ -16,19 +16,19 @@ describe('Register', () => {
         cy.get('#name').type(name)
         cy.get('#name').should('have.value', name)
         // logo
-        cy.get('#logo').click().type(logo)
+        cy.get('#logo').type(logo)
         cy.get('#logo').should('have.value', logo)
         // location
-        cy.get('#location').click().type(location)
+        cy.get('#location').type(location)
         cy.get('#location').should('have.value', location)
         // face
-        cy.get('#face').click().type(face)
+        cy.get('#face').type(face)
         cy.get('#face').should('have.value', face)
         //insta
-        cy.get('#insta').click().type(insta)
+        cy.get('#insta').type(insta)
         cy.get('#insta').should('have.value', insta)
         // description
-        cy.get('#description').click().type(desk)
+        cy.get('#description').type(desk)
         cy.get('#description').should('have.value', desk)
         cy.get('#chain').select('servicio')
 
