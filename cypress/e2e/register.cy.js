@@ -11,7 +11,7 @@ describe('Register', () => {
     beforeEach(() => {
         cy.visit(url)
     })
-    it('Should register bussines',()=>{
+    it.only('Should register bussines',()=>{
         // nombre
         cy.get('#name').type(name)
         cy.get('#name').should('have.value', name)
@@ -30,5 +30,12 @@ describe('Register', () => {
         // description
         cy.get('#description').click().type(desk)
         cy.get('#description').should('have.value', desk)
+        cy.get('#chain').select('servicio')
+
+
+    })
+    it('Should select combo box',()=>{
+        cy.get('#chain').select('servicio')
+
     })
 })
