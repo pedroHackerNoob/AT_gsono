@@ -32,7 +32,7 @@ describe('Register', () => {
         cy.get('#description').should('have.value', desk)
         cy.get('#chain').select('servicio')
 
-
+        cy.get('#submit').click()
     })
     it('Should select combo box',()=>{
         cy.get('#chain').select('servicio')
