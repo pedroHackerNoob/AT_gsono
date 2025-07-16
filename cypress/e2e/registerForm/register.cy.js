@@ -1,13 +1,4 @@
-import {url} from "../enviroment";
-
-const name = "troyano";
-const logo = "https://example.com/"
-const location = "https://example.com/"
-const face = "https://example.com/"
-const insta = "https://example.com/"
-const desk = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
-// const desk = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum non lorem eget vulputate. Suspendisse facilisis erat et justo pulvinar lobortis. Morbi sit amet libero sodales, fringilla felis quis, cursus sapien. Suspendisse potenti. Cras lectus mauris, commodo a tellus eget, porttitor aliquam est. Ut vulputate sodales luctus. Fusce consequat porttitor ornare. Aliquam scelerisque libero dui, sed sodales tellus vestibulum vitae. Aenean sed mi tincidunt, tincidunt tortor sit amet, gravida ipsum."
-//
+import {url,name,logo,location,face,insta,desk, chain} from "../enviroment";
 describe('Register', () => {
     beforeEach(() => {
         cy.visit(url)
@@ -32,16 +23,12 @@ describe('Register', () => {
         // description
         cy.get('#description').type(desk)
         cy.get('#description').should('have.value', desk)
-        cy.get('#chain').select('servicio')
         // combo
-        cy.get('#chain').select('servicio')
+        cy.get('#chain').select(chain)
+        cy.get('#chain').select(chain)
 
 
         cy.get('#submit').click()
-    })
-    // select combo
-    it('Should select combo box',()=>{
-
     })
 
 })
