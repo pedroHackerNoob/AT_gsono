@@ -15,11 +15,11 @@ describe('Register', () => {
         cy.get('#location').type(location)
         cy.get('#location').should('have.value', location)
         // face
-        cy.get('#face').type(face)
-        cy.get('#face').should('have.value', face)
-        //insta
-        cy.get('#insta').type(insta)
-        cy.get('#insta').should('have.value', insta)
+        cy.get('#social').type(face)
+        cy.get('#social').should('have.value', face)
+        //social0
+        cy.get('#social0').type(insta)
+        cy.get('#social0').should('have.value', insta)
         // description
         cy.get('#description').type(desk)
         cy.get('#description').should('have.value', desk)
