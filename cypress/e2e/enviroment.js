@@ -1,4 +1,4 @@
-export const url = 'http://localhost:5173/register'
+export const urlCreateBussines = 'http://localhost:5173/register'
 export const name = "be a man";
 export const logo = "https://www.facebook.com/photo/?fbid=181272244281437&set=a.181272217614773"
 export const location = "https://maps.app.goo.gl/FMASCVPzoehdbqYc8"

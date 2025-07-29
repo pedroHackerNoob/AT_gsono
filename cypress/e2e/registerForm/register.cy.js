@@ -1,7 +1,7 @@
-import {url,name,logo,location,face,insta,desk, chain} from "../enviroment";
+import {urlCreateBussines,name,logo,location,face,insta,desk, chain} from "../enviroment";
 describe('Register', () => {
     beforeEach(() => {
-        cy.visit(url)
+        cy.visit(urlCreateBussines)
     })
     // fill reegister
     it.only('Should register bussines',()=>{

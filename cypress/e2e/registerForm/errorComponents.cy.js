@@ -1,8 +1,8 @@
-import {url} from '../enviroment'
+import {urlCreateBussines} from '../enviroment'
 //
 describe('show error component message', () => {
     beforeEach(() => {
-        cy.visit(url)
+        cy.visit(urlCreateBussines)
     })
     // component
     it.only('Should show error',()=>{
